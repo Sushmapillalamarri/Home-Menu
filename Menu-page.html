@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="Home.css" />
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+
+ <div class="title-head">
+      <div class="cont">
+        <div class="nav">
+          <button class="nav-toggle" aria-label="open navigation">
+            <span class="hamburger"></span>
+          </button>
+
+          <h1 class="title">Home Menu</h1>
+          <div class="nav2">
+            <ul class="nav-item">
+              <li><a href="Home.html" class="a">Home</a></li>
+              <li><a href="About.html" class="a">About</a></li>
+              <li><a href="Menu-page.html" class="a">Menu</a></li>
+              <li><a href="Contact.html" class="a">Contact</a></li>
+              <li><a href="#" class="login">Login</a></li>
+              <li><a href="#" class="logout">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="flex">
+      <div class="left-nav ">
+        <div class="cont">
+        <h1 class="t1 t" >Tiffin <a href="#Tiffin"> <i class="fa fa-arrow-right arrow"></i></a> </h1>
+        <h1 class="t2 t">Lunch <a href="#Lunch"> <i class="fa fa-arrow-right arrow"></i></a>   </h1>
+        <h1 class="t3 t">Dinner <a href="#Dinner"> <i class="fa fa-arrow-right arrow"></i></a>  </h1>
+        </div>
+    </div>
+
+  
+      
+    <div class="form1" id="add-box"> 
+       <h1 class="form-header">Add New Items - <span class="s1"></span></h1>
+      <label>Image Link -</label>
+      <input type="text" placeholder="Url" class="img-url-1" > <br /><br />
+      <label>Image Name -</label>
+      <input type="text" placeholder="Name" class="img-name-1" ><br /><br />
+      <button class="btn1" > Done</button>
+    </div>
+
+      <div class="navigation">
+ 
+        <section class="container" id="Tiffin">
+          <div class="cont">
+            <h1 class="tiffin-title">Tiffins</h1>
+                 <div class="p1" onclick="plusBtn(tiffinPlusBtn, ' tiffin',tiffinArr,tiffinBox,tiffinArr_obj,exist_tiffin)"><a href="#add-box"> &plus;</a></div>
+            <div class="tiffin ">
+            </div>
+          </div>
+        </section>
+
+        <section class="container2" id="Lunch">
+          <div class="cont">
+             <h1 class="Lunch-title">Lunch</h1>
+               <div class="p2" onclick="plusBtn(lunchPlusBtn, ' lunch',lunchArr,lunchBox,lunchArr_obj,exist_lunch)"><a href="#add-box"> &plus;</a></div>
+            <div class="lunch ">
+             </div>
+          </div>
+        </section>
+          
+        <section class="container3" id="Dinner">
+          <div class="cont">
+            <h1 class="Dinner-title">Dinner</h1>
+               <div class="p3" onclick="plusBtn(dinnerPlusBtn, ' dinner',dinnerArr,dinnerBox,dinnerArr_obj,exist_dinner)"><a href="#add-box"> &plus;</a></div>
+                   <div class="dinner ">
+                </div>
+        </section>   
+      </div>
+
+    </div>
+
+    <script src="Menu-page.js" ></script>
+</body>
+</html>
